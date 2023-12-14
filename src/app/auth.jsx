@@ -24,19 +24,3 @@ export const reset = async (req) => {
         alert("failed")
     }
 }
-export const emailVerificationCode = async (req) => {
-    try {
-        await axios.post("https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyDwrhlv2YPnc-9Vib8dizzf_EOC3Bx89Zw", req)
-        alert("verification code send")
-    } catch (error) {
-        alert("failed")
-    }
-}
-export const ConfirmEmailVerificationCode = async (req) => {
-    try {
-        await axios.post("https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyDwrhlv2YPnc-9Vib8dizzf_EOC3Bx89Zw", req)
-        alert("Email Verified")
-    } catch (error) {
-        alert("Failed")
-    }
-}
