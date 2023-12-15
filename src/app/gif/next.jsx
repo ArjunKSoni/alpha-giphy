@@ -40,7 +40,7 @@ const Next = ({ e }) => {
     }
 
     return (
-        <div className="bg-white mainBox relative rounded-xl p-10">
+        <div className="bg-white mainBox overflow-scroll relative rounded-xl p-10">
             <div className='flex z-40 flex-wrap gap-2 justify-center items-center'>
                 <div className=' bg-slate-200 flex gap-3 md:w-full lg:w-5/6 rounded-xl p-3'>
                     <Image src={"/Search icon.png"} alt='search' width={30} height={30}></Image>

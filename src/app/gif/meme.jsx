@@ -16,7 +16,7 @@ const Meme = ({e,next,page,setNext,setPage,home,setShow,setsearch}) => {
                 </div>}
             </div>
             <div className='flex gap-3 p-3 flex-col items-center justify-center '>
-                <div className='flex gap-2 items-center w-5/6 justify-center'>
+                <div className='flex lg:gap-2 md:gap-1 items-center w-5/6 justify-center'>
                     <button className='p-2 rounded bg-white transition-all hover:bg-blue-700 hover:text-white w-32 h-14 text-xl font-bold' onClick={() => { setNext(next == 0 ? e.length - 1 : next - 1); let k = (next == 0 ? e.length - 1 : next - 1) / 3; setPage(3 * Math.floor(k)); }}>Previous</button>
                     <h2 className={`p-3 text-xl font-bold ${next == page ? "bg-red-200 border-b-4" : ""} border-red-500`}>{page}</h2>
                     {e.length - 1 >= page + 1 && <h2 className={`p-3 text-xl font-bold ${next == page + 1 ? "bg-red-200 border-b-4" : ""} border-red-500`}>{page + 1}</h2>}

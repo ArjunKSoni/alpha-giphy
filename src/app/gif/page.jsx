@@ -10,7 +10,7 @@ export default async function Gif(req, res) {
   const gif = data.data;
 
   return (
-    <div className='flex items-center md:bg-white lg:bg-slate-200 flex-col w-screen justify-center h-screen rounded p-10'>
+    <div className='flex items-center bg-slate-200 flex-col w-full justify-center md:h-fit overflow-scroll h-screen rounded p-10'>
       <Next e={gif} />
     </div>
   )
