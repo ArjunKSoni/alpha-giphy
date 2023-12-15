@@ -13,12 +13,19 @@
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 .infinite-rotate {
   animation: rotate 1s linear infinite; /* Adjust duration as needed */
+}
+
+@media (max-width: 768px) {
+  .imgholder{
+    width:400px;
+    height: 300px;
+  }
 }
